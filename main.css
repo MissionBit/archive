@@ -1,0 +1,20 @@
+body {
+	background-color:yellow;
+}
+.names
+{
+	color:##04B486;
+}
+.output
+{
+	position: absolute;
+	right: 30px;
+	top: 50px;
+
+}
+.button
+{
+	position: absolute;
+	right:70px;
+	bottom: 10px;
+}
