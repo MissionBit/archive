@@ -1,0 +1,30 @@
+
+#login {
+  height: 200px;
+  width: 500px ;
+  margin-left: 350px ;
+  margin-right: 200px ;
+  margin-top:300px ;
+  background-color: lightblue;
+}
+
+label {
+
+	font-size:30px;
+	color: purple;
+}
+
+button {
+	font-size:20px;
+	border-color: purple;
+	color: green;
+	background-color: lightblue;
+}
+
+#loginform {
+		height: 100px;
+		margin-left: 66px;
+		margin-right: auto;
+		margin-bottom: 50px;
+		margin-top:0px;
+}
