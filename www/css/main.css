@@ -1,20 +1,62 @@
 body {
 	background-color:red;
+	background-image:url('wolf.jpg');
 }
-.names
+h1 {
+	font-size: 40px;
+}
+#header
 {
-	color:##04B486;
+	background-color: magenta;
+	color: blue;
 }
-.output
+#names
+{
+	color: green;
+	font-size: 28px;
+}
+#output
 {
 	position: absolute;
 	right: 30px;
 	top: 50px;
+	background-image:url('plaid.jpg'); 
 
 }
-.button
+#button
 {
 	position: absolute;
 	right:70px;
 	bottom: 10px;
+}	
+div {
+  margin: 20px;
+}
+ 
+ul {
+  list-style-type: none;
+  width: 500px;
+}
+ 
+h3 {
+  font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+}
+ 
+li img {
+  float: left;
+  margin: 0 15px 0 0;
+}
+ 
+li p {
+  font: 200 12px/1.5 Georgia, Times New Roman, serif;
+}
+ 
+li {
+  padding: 20px;
+  overflow: auto;
+}
+ 
+li:hover {
+  background: #eee;
+  cursor: pointer;
 }
