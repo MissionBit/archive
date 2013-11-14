@@ -4,6 +4,8 @@ Chat client
 A chat client created by mission bit students. 
 --
 
+Check it out [here](http://162.243.141.18).
+
 ### Created by
 
  * Isaac 
