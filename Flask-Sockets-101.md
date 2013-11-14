@@ -2,7 +2,7 @@ Here are the basic steps to get started on developing the Chat Server using Flas
 
 1. Do the initial project setup: [instructions](https://github.com/MissionBit/chat-client/wiki/Developing-the-Chat-Server)
 
-2. Create an 'Echo Server' using the server.py template and the Flask Socket [documentation](http://kennethreitz.org/introducing-flask-sockets/)
+2. Create an 'Echo Server' using the chat-client/server/server.py template and the Flask Socket [documentation](http://kennethreitz.org/introducing-flask-sockets/)
 
 3. Test the 'Echo Server' in the development console of your web browser
 
