@@ -15,5 +15,11 @@ def hello():
 #Add additional code here
 
 if __name__ == "__main__":
-    server = pywsgi.WSGIServer(("", 8080), app, handler_class=WebSocketHandler)
+    import sys
+
+    port = 8080
+    if len(sys.argv) > 1:
+        port = int(sys.argv[1])
+
+    server = pywsgi.WSGIServer(("", port), app, handler_class=WebSocketHandler)
     server.serve_forever() 
