@@ -6,6 +6,8 @@ A chat client created by mission bit students.
 
 Check it out [here](http://162.243.141.18).
 
+For documentation go [here](https://github.com/MissionBit/chat-client/wiki)
+
 ### Created by
 
  * Isaac 
