@@ -1,5 +1,14 @@
 The team server has all of the Python dependencies setup for development using Flask Sockets. 
 
+Installing Dependencies on Local Laptop:
+brew install libevent 
+   - pip install gevent  
+   - brew install python 
+   - hash -r
+   - pip install gevent-socketio
+   - pip install flask
+   - pip install flask-sockets
+
 * Python - http://www.python.org/
 * Flask - http://flask.pocoo.org/
 * Flask Sockets - http://kennethreitz.org/introducing-flask-sockets/
