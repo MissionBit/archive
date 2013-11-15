@@ -19,15 +19,17 @@ h1 {
 {
 	position: absolute;
 	right: 30px;
-	top: 300px;
+	top: 90px;
 	background-image:url('plaid.jpg'); 
 
 }
-#button
+#typingbox
 {
 	position: absolute;
 	right:70px;
 	bottom: 10px;
+	background-color: yellow;
+	background-image: url('hm.png position=absolute');
 }	
 div {
   margin: 20px;
