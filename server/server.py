@@ -8,7 +8,12 @@ app = Flask(__name__)
 sockets = Sockets(app)
 
 #A simple handler to show that the server is up and running
-@app.route("/")
+
+@app.route("/chat")
+def chat():
+		return "Chatroom"
+
+@app.route("/")			
 def hello():
         return "chat server is running..."
 
