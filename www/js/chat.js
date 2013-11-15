@@ -1,4 +1,5 @@
 function send (){
-	// body..
-	alert ("hello");
+	var inputTextArea= document.getElementById("input");
+	var inputText= inputTextArea.value;
+	alert (inputText);
 }
