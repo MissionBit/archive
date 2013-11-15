@@ -1,25 +1,25 @@
 body {
 	background-color:red;
-	background-image:url('wolf.jpg');
+	background-image:url('light.jpg');
 }
 h1 {
 	font-size: 40px;
 }
 #header
 {
-	background-color: magenta;
 	color: blue;
 }
 #names
 {
 	color: green;
 	font-size: 28px;
+	bottom: 500px;
 }
 #output
 {
 	position: absolute;
 	right: 30px;
-	top: 50px;
+	top: 300px;
 	background-image:url('plaid.jpg'); 
 
 }
