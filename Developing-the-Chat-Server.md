@@ -1,5 +1,13 @@
 The team server has all of the Python dependencies setup for development using Flask Sockets. 
 
+
+
+**Documentation**
+* Python - http://www.python.org/
+* Flask - http://flask.pocoo.org/
+* Flask Sockets - http://kennethreitz.org/introducing-flask-sockets/
+
+**Local Setup**
 Installing Dependencies on Local Laptop:
    - brew install libevent 
    - pip install gevent  
@@ -9,14 +17,7 @@ Installing Dependencies on Local Laptop:
    - pip install flask
    - pip install flask-sockets
 
-* Python - http://www.python.org/
-* Flask - http://flask.pocoo.org/
-* Flask Sockets - http://kennethreitz.org/introducing-flask-sockets/
-
-Development of the chat server should follow this process:
-
-**Initial Setup:**
-
+**Remote Setup:**
 1. Login to the team server
 ```
 ssh user@162.243.141.18
