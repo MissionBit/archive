@@ -19,6 +19,7 @@ Installing Dependencies on Local Laptop:
    - pip install flask-sockets
 
 **Remote Setup:**
+
 1. Login to the team server
 ```
 ssh user@162.243.141.18
