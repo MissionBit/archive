@@ -7,7 +7,7 @@ The team server has all of the Python dependencies setup for development using F
 * Flask - http://flask.pocoo.org/
 * Flask Sockets - http://kennethreitz.org/introducing-flask-sockets/
 
-**Local Setup**
+**Local Setup:**
 
 Installing Dependencies on Local Laptop:
    - brew install libevent 
