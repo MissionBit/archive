@@ -8,6 +8,7 @@ The team server has all of the Python dependencies setup for development using F
 * Flask Sockets - http://kennethreitz.org/introducing-flask-sockets/
 
 **Local Setup**
+
 Installing Dependencies on Local Laptop:
    - brew install libevent 
    - pip install gevent  
