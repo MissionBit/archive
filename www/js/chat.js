@@ -10,3 +10,31 @@ function appendOutput (text) {
 	var newText= oldText+text;
 	outputTextArea.value= newText;
 }
+
+
+var login= document.getElementById("login");
+var button= document.getElementById("join");
+var chat=document.getElementById("chat");
+var button2=document.getElementById("logout");
+var showchat= function() {
+	login.style.display="none";
+	chat.style.display="block";
+	button2.style.display="block"
+}
+
+var showlogin= function() {
+	chat.style.display="none";
+	login.style.display="block";
+	button2.style.display="none";
+} 
+
+button.addEventListener("click", function(e) {
+	showchat();
+});
+
+button2.addEventListener("click", function(e) {
+	showlogin()
+});
+
+
+showlogin();

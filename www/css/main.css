@@ -5,6 +5,11 @@ body {
 h1 {
 	font-size: 40px;
 }
+#logout
+{
+	position: absolute;
+	margin-left: 625px;
+}
 #header
 {
 	color: blue;
@@ -30,7 +35,8 @@ h1 {
 	bottom: 10px;
 	background-color: yellow;
 	background-image: url('hm.png position=absolute');
-}	
+}
+
 div {
   margin: 20px;
 }
