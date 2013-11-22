@@ -1,7 +1,6 @@
 function send (){
 	var inputTextArea= document.getElementById("input");
 	var inputText= inputTextArea.value;
-	alert (inputText);
 	appendOutput(inputText);
 }
 function appendOutput (text) {
@@ -10,7 +9,11 @@ function appendOutput (text) {
 	var newText= oldText+text;
 	outputTextArea.value= newText;
 }
+function refreshText() { 
+	var refreshText= document.getElementById("output");
+		refreshText.value="" ;
 
+}
 
 var login= document.getElementById("login");
 var button= document.getElementById("join");
