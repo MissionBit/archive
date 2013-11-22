@@ -1,6 +1,6 @@
 body {
 	background-color:red;
-	background-image:url('light.jpg');
+	background-image:url('cartoon.jpg');
 }
 h1 {
 	font-size: 40px;
@@ -23,16 +23,16 @@ h1 {
 {
 	position: absolute;
 	right: 30px;
-	top: 90px;
+	top: 150px;
 	background-image:url('plaid.jpg'); 
-
 }
 #typingbox
 {
-	position: absolute;
+	position: fixed;
 	right:70px;
 	bottom: 10px;
 	background-image: url('hm.png position=absolute');
+
 }
 
 ul {
