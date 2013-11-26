@@ -15,4 +15,5 @@ Welcome to the chat-client wiki!
 [Data Serialization](https://github.com/MissionBit/chat-client/wiki/Data-Serialization-with-JSON)
 
 **Week of 11-25**
+
 [Javascript - WebSockets](https://github.com/MissionBit/chat-client/wiki/Javascript-WebSockets)
