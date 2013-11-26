@@ -12,10 +12,19 @@ This tutorial will demonstrate how to connect to a WebSocket using Javascript.
 
 <body>
 
-	<button id="connectButton">Connect</button>
-	<button id="disconnectButton">Disconnect</button>
+	<div>
+		<button id="connectButton">Connect</button>
+	</div>
 	
-        <script src="main.js"></script>
+	<div>
+		<button id="chatButton">Send Message</button>
+	</div>
+	
+	<div>
+		<button id="disconnectButton">Disconnect</button>
+	</div>
+	
+    <script src="main.js"></script>
 </body>
 </html>
 ```
