@@ -13,3 +13,5 @@ Welcome to the chat-client wiki!
 [Javascript - Show/Hide](https://github.com/MissionBit/chat-client/wiki/Javascript---Show-Hide-Tutorial)
 
 [Data Serialization](https://github.com/MissionBit/chat-client/wiki/Data-Serialization-with-JSON)
+
+**Week of 11-25**
