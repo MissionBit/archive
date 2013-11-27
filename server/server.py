@@ -7,7 +7,7 @@ import json
 
 app = Flask(__name__)
 sockets = Sockets(app)
-
+names = []
 #A simple handler to show that the server is up and running
 @sockets.route('/echo')
 def echo_socket(ws):
@@ -23,9 +23,23 @@ def echo_socket(ws):
 
 
 
-@app.route("/chat")
-def chat():
-		return "Chatroom"
+@sockets.route("/chat")
+def chat(ws):
+    while True:
+        message = ws.receive()
+        print message
+        dictionary = json.loads(message)
+        print dictionary
+        action = dictionary["action"]
+        print action 
+        if action == "join": 
+            print "join" ;
+            name = dictionary["name"]
+            names.append(name)
+            print len(names)
+        ws.send("action; " + action)
+
+
 
 @app.route("/")			
 def hello():
