@@ -3,35 +3,46 @@
 	<head>
 		<title>Facebook</title>
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/login.css">
 	</head>
 	<body> 
-    <script type="text/javascript" src="js/chat.js"></script>
-		<div id="header"><h1><img src="http://fc09.deviantart.net/fs70/f/2011/345/2/b/miley_cyrus_png_by_triniij-d4itue7.png" width="500" height="80"/></h1></div>
+      <div id="login">
+        <form id="loginform">
+          <label>First name: </label><input type="text" name="fname"><br>
+         <button id="join" type="button">Join!</button>
+        </form>
+    </div>
+    <div id="logout">
+    <button id="logout" type="button"> Logout</button>
+    </div>
+   <div id="chat"> 
+		<div id="header"><h1><img src="css/coffee.jpg" width="500" height="150"/></h1></div>
 			<div id="names">
 
   <ul>
-    <li>
-      <img src="http://lorempixum.com/100/100/nature/1">
-      <h3>Headline</h3>
-      <p>Lorem ipsum dolor sit amet...</p>
+    <li onclick="refreshText()">
+      <img src="http://lorempixum.com/40/40/nature/1" width="50" height="50">
+      <h3>Jayden</h3>
+      <p>Hi</p>
     </li>
        
-    <li>
-      <img src="http://lorempixum.com/100/100/nature/2">
-      <h3>Headline</h3>
-      <p>Lorem ipsum dolor sit amet...</p>
+    <li onclick="refreshText()">
+      <img src="http://lorempixum.com/40/40/nature/2"width="50" height="50">
+      <h3>Kirby</h3>
+      <p>Hi</p>
+
     </li>
  
-    <li>
-      <img src="http://lorempixum.com/100/100/nature/3">
-      <h3>Headline</h3>
-      <p>Lorem ipsum dolor sit amet...</p>
+    <li onclick="refreshText()">
+      <img src="http://lorempixum.com/40/40/nature/3"width="50" height="50">
+      <h3>Eddie</h3>
+     <p>Hi</p>
     </li>
  
-    <li>
-      <img src="http://lorempixum.com/100/100/nature/4">
-      <h3>Headline</h3>
-      <p>Lorem ipsum dolor sit amet...</p>
+    <li onclick="refreshText()">
+      <img src="http://lorempixum.com/40/40/nature/4"width="50" height="50">
+      <h3>Christina</h3>
+       <p>Hi</p>
     </li>
   </ul>
 
@@ -41,24 +52,7 @@
 
 			<div >
 			<textarea id="output" cols= 160 rows= 80 >
-Kirby Leo: i like math
-Jayden Lee: i really like math
-Kirby Leo: i like math
-Jayden Lee: i really like math
-Kirby Leo: i like math
-Jayden Lee: i really like math
-Kirby Leo: i like math
-Jayden Lee: i really like math
-Kirby Leo: i like math
-Jayden Lee: i really like math
-Kirby Leo: i like math
-Jayden Lee: i really like math
-Kirby Leo: i like math
-Jayden Lee: i really like math
-Kirby Leo: i like math
-Jayden Lee: i really like math
-Kirby Leo: i like math
-Jayden Lee: i really like math
+        gdwvbcndg
 			</textarea>
 		</div>  
 
@@ -68,7 +62,10 @@ Jayden Lee: i really like math
 			</textarea>
 			<button type="button" onclick="send()">SEND!</button>
 
-		</div>	
+		</div>
+    </div>
 
+
+ <script type="text/javascript" src="js/chat.js"></script>
 	</body>
 </html>

@@ -8,8 +8,14 @@ import json
 app = Flask(__name__)
 sockets = Sockets(app)
 names = []
-#A simple handler to show that the server is up and running
+
 @sockets.route('/echo')
+def echo_socket(ws):
+    while True:
+        message = ws.receive()
+        ws.send(message)
+
+@sockets.route('/testing')
 def echo_socket(ws):
     while True:
         message = ws.receive()
@@ -20,8 +26,6 @@ def echo_socket(ws):
         message2 = json.dumps(dictionary)
         print message2
         ws.send(message2)
-
-
 
 @sockets.route("/chat")
 def chat(ws):
@@ -39,12 +43,9 @@ def chat(ws):
             print len(names)
         ws.send("action; " + action)
 
-
-
 @app.route("/")			
 def hello():
         return "chat server is running..."
-#Add additional code here
 
 if __name__ == "__main__":
     import sys

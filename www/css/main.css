@@ -1,9 +1,14 @@
 body {
 	background-color:red;
-	background-image:url('light.jpg');
+	background-image:url('cartoon.jpg');
 }
 h1 {
 	font-size: 40px;
+}
+#logout
+{
+	position: absolute;
+	margin-left: 625px;
 }
 #header
 {
@@ -13,28 +18,23 @@ h1 {
 {
 	color: green;
 	font-size: 28px;
-	bottom: 500px;
 }
 #output
 {
 	position: absolute;
 	right: 30px;
-	top: 90px;
+	top: 150px;
 	background-image:url('plaid.jpg'); 
-
 }
 #typingbox
 {
-	position: absolute;
+	position: fixed;
 	right:70px;
 	bottom: 10px;
-	background-color: yellow;
 	background-image: url('hm.png position=absolute');
-}	
-div {
-  margin: 20px;
+
 }
- 
+
 ul {
   list-style-type: none;
   width: 500px;
