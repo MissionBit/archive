@@ -8,13 +8,12 @@
   
 }
 
-label {
-
-	font-size:30px;
-}
 
 button {
 	font-size:20px;
+	background-color: #1BA14A;
+	color: white;
+	margin-left: 375px;
 
 }
 
@@ -24,4 +23,7 @@ button {
 		margin-right: auto;
 		margin-bottom: 50px;
 		margin-top:0px;
+}
+#loginPUT{
+	font-size: 20px;
 }
