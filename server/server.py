@@ -8,7 +8,7 @@ import json
 app = Flask(__name__)
 sockets = Sockets(app)
 names = []
-
+usersockets = []
 @sockets.route('/echo')
 def echo_socket(ws):
     while True:
@@ -40,8 +40,18 @@ def chat(ws):
             print "join" ;
             name = dictionary["name"]
             names.append(name)
+            usersockets.append(ws)
             print len(names)
         ws.send("action; " + action)
+        if action == "send":  
+            name = dictionary["name"]
+            text = dictionary["text"]
+            for usersocket in usersockets:
+                usersocket.send(name + " said.." + text)
+
+
+
+
 
 @app.route("/")			
 def hello():
