@@ -1,5 +1,5 @@
 body {
-	background-color:red;
+	
 	background-image:url('cartoon.jpg');
 }
 h1 {
@@ -12,11 +12,11 @@ h1 {
 }
 #header
 {
-	color: blue;
+	color: black;
 }
 #names
 {
-	color: green;
+	
 	font-size: 28px;
 }
 #output
