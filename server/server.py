@@ -17,15 +17,31 @@ def echo_socket(ws):
 
 @sockets.route('/testing')
 def echo_socket(ws):
+
+    #create a unique key that identifies this socket
+    host, port = ws.socket.getpeername()
+    socket_key = host + ":" + str(port)
+    print "Connected: {0}".format(socket_key)
+
     while True:
-        message = ws.receive()
-        print message
-        dictionary = json.loads(message)
-        print dictionary
-        dictionary["name"] = "Jim Doe"
-        message2 = json.dumps(dictionary)
-        print message2
-        ws.send(message2)
+        raw_message = ws.receive()
+        if ws.socket is None:
+            print "Disconnected: {0}".format(socket_key)
+            break    
+
+        message = json.loads(raw_message)
+        action = message["action"]
+        data = message["data"]
+        if action == "join":
+            response = { "event": "joined", "data": data }
+        elif action == "send":
+            response = { "event": "message", "data": data } 
+        else:
+            response = { "event": "bad_message", "data": "Bad message: {0}".format(message) }
+
+        if ws.socket is not None:
+            ws.send(json.dumps(response))
+
 
 @sockets.route("/chat")
 def chat(ws):
