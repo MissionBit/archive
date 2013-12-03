@@ -17,3 +17,7 @@ Welcome to the chat-client wiki!
 **Week of 11-25**
 
 [Javascript - WebSockets](https://github.com/MissionBit/chat-client/wiki/Javascript-WebSockets)
+
+**Week of 12-2**
+
+[Chat Protocol](https://github.com/MissionBit/chat-client/wiki/Chat-Protocol)
