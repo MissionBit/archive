@@ -21,3 +21,5 @@ Welcome to the chat-client wiki!
 **Week of 12-2**
 
 [Chat Protocol](https://github.com/MissionBit/chat-client/wiki/Chat-Protocol)
+
+[Dynamic List](https://github.com/MissionBit/chat-client/wiki/Dynamic-List)
