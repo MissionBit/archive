@@ -7,63 +7,47 @@ import json
 
 app = Flask(__name__)
 sockets = Sockets(app)
-names = []
-usersockets = []
+names = {}
+usersockets = {} 
 @sockets.route('/echo')
 def echo_socket(ws):
     while True:
         message = ws.receive()
         ws.send(message)
 
-@sockets.route('/testing')
+@sockets.route('/chat')
 def echo_socket(ws):
 
     #create a unique key that identifies this socket
+    
     host, port = ws.socket.getpeername()
     socket_key = host + ":" + str(port)
     print "Connected: {0}".format(socket_key)
-
+    usersockets[socket_key] = ws
     while True:
         raw_message = ws.receive()
         if ws.socket is None:
             print "Disconnected: {0}".format(socket_key)
             break    
-
         message = json.loads(raw_message)
         action = message["action"]
         data = message["data"]
         if action == "join":
-            response = { "event": "joined", "data": data }
+            names[socket_key] = data
+            for key in usersockets.keys():
+                connection = usersockets[key]
+                name = names[socket_key]
+                response = {"event": "joined", "data": data}
+                connection.send(json.dumps(response))
         elif action == "send":
-            response = { "event": "message", "data": data } 
+             for key in usersockets.keys():
+                connection = usersockets[key]
+                name = names[socket_key]
+                response = { "event": "message", "data": name + ": " + data}
+                connection.send(json.dumps(response))
         else:
             response = { "event": "bad_message", "data": "Bad message: {0}".format(message) }
 
-        if ws.socket is not None:
-            ws.send(json.dumps(response))
-
-
-@sockets.route("/chat")
-def chat(ws):
-    while True:
-        message = ws.receive()
-        print message
-        dictionary = json.loads(message)
-        print dictionary
-        action = dictionary["action"]
-        print action 
-        if action == "join": 
-            print "join" ;
-            name = dictionary["name"]
-            names.append(name)
-            usersockets.append(ws)
-            print len(names)
-        ws.send("action; " + action)
-        if action == "send":  
-            name = dictionary["name"]
-            text = dictionary["text"]
-            for usersocket in usersockets:
-                usersocket.send(name + " said.." + text)
 
 
 
