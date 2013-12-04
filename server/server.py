@@ -28,6 +28,8 @@ def echo_socket(ws):
         raw_message = ws.receive()
         if ws.socket is None:
             print "Disconnected: {0}".format(socket_key)
+            del usersockets[socket_key]
+            del names[socket_key]
             break    
         message = json.loads(raw_message)
         action = message["action"]
