@@ -2,6 +2,10 @@ function send (){
 	var inputTextArea= document.getElementById("input");
 	var inputText= inputTextArea.value;
 	socket.send(inputText);
+	var send={action: "send",data: inputText};
+    var message= JSON.stringify(send);
+    console.log(message);
+    socket.send(message);
 }
 function appendOutput (text) {
 	var outputTextArea= document.getElementById("output");
@@ -32,25 +36,39 @@ var showlogin= function() {
 } 
 
 button.addEventListener("click", function(e) {
-	socket = new WebSocket('ws://162.243.141.18:8080/echo');
+	socket = new WebSocket('ws://162.243.141.18:8080/chat');
+
+
+
     socket.onopen = function() {
-        console.log("Connected to socket");
+    	console.log("Connected to socket");
+    	var loginPUT=document.getElementById('loginPUT');
+    	var join={action: "join",data: loginPUT.value};
+    	var message= JSON.stringify(join);
+    	console.log(message);
+    	socket.send(message);
+
     };
 
     socket.onmessage = function(msg) {
         console.log(msg.data);
-        appendOutput(msg.data);
+        var message= JSON.parse(msg.data);
+        var e= message.event;
+        if (e=='message') {
+        	   appendOutput(msg.data);
+        };
     };
 	
 	socket.onerror = function(error) {
         console.log(error);
     };
 
-    socket.onclose = function() {
+    socket.onclose = function(close) {
         console.log("Disconnected from socket");
+
+
     };
     showchat();
-
 });
 
 button2.addEventListener("click", function(e) {

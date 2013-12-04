@@ -25,6 +25,7 @@ h1 {
 	right: 30px;
 	top: 150px;
 	background-image:url('plaid.jpg'); 
+	margin-right: 300px;
 }
 #typingbox
 {
@@ -32,6 +33,7 @@ h1 {
 	right:70px;
 	bottom: 10px;
 	background-image: url('hm.png position=absolute');
+	margin-left: 600px;
 
 }
 
