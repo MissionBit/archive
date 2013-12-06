@@ -1,11 +1,11 @@
 function send (){
 	var inputTextArea= document.getElementById("input");
 	var inputText= inputTextArea.value;
-	socket.send(inputText);
 	var send={action: "send",data: inputText};
     var message= JSON.stringify(send);
     console.log(message);
     socket.send(message);
+
 }
 function appendOutput (text) {
 	var outputTextArea= document.getElementById("output");
@@ -55,7 +55,7 @@ button.addEventListener("click", function(e) {
         var message= JSON.parse(msg.data);
         var e= message.event;
         if (e=='message') {
-        	   appendOutput(msg.data);
+        	   appendOutput(message.data);
         };
     };
 	
@@ -64,7 +64,7 @@ button.addEventListener("click", function(e) {
     };
 
     socket.onclose = function(close) {
-        console.log("Disconnected from socket");
+        console.log("Disconnected from socket") ;
 
 
     };
