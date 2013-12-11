@@ -47,8 +47,6 @@ def echo_socket(ws):
                 name = names[socket_key]
                 response = { "event": "message", "data": name + ": " + data}
                 connection.send(json.dumps(response))
-                if ws.socket is not None:
-                    connection.send(json.dumps(response))
         else:
             response = { "event": "bad_message", "data": "Bad message: {0}".format(message) }
 
