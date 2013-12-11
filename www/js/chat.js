@@ -1,3 +1,7 @@
+var chatmembers=[]
+var chatList= document.getElementById("chatList");
+
+
 function send (){
 	var inputTextArea= document.getElementById("input");
 	var inputText= inputTextArea.value;
@@ -57,8 +61,14 @@ button.addEventListener("click", function(e) {
         if (e=='message') {
         	   appendOutput(message.data);
         };
+
+        if (e=='joined') { 
+            chatmembers.push(message.data);
+            refreshList (chatList,chatmembers);
+
+        };
     };
-	
+
 	socket.onerror = function(error) {
         console.log(error);
     };
