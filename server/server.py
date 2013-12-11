@@ -40,7 +40,8 @@ def echo_socket(ws):
                 connection = usersockets[key]
                 name = names[socket_key]
                 response = {"event": "joined", "data": names.values()}
-                connection.send(json.dumps(response))
+                if ws.socket is not None:
+                    connection.send(json.dumps(response))
         elif action == "send":
              for key in usersockets.keys():
                 connection = usersockets[key]
