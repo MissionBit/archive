@@ -1,8 +1,5 @@
 var clearList = function(list) {
-    for(i=0; i < list.childNodes.length; i++) {
-        var item = chatList.childNodes[i];
-        list.removeChild(item);
-    }
+    list.innerHTML = '';
 };
 
 var populateList = function(list, members) {
