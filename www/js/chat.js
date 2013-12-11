@@ -1,4 +1,4 @@
-var chatmembers=[]
+
 var chatList= document.getElementById("chatList");
 
 
@@ -63,8 +63,7 @@ button.addEventListener("click", function(e) {
         };
 
         if (e=='joined') { 
-            chatmembers.push(message.data);
-            refreshList (chatList,chatmembers);
+            refreshList (chatList,message.data);
 
         };
     };
