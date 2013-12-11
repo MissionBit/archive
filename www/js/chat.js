@@ -10,7 +10,7 @@ function send (){
 function appendOutput (text) {
 	var outputTextArea= document.getElementById("output");
 	var oldText= outputTextArea.value;
-	var newText= oldText+text;
+	var newText= oldText + "\n" + text;
 	outputTextArea.value= newText;
 }
 function refreshText() { 
