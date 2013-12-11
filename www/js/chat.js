@@ -1,3 +1,7 @@
+
+var chatList= document.getElementById("chatList");
+
+
 function send (){
 	var inputTextArea= document.getElementById("input");
 	var inputText= inputTextArea.value;
@@ -10,8 +14,10 @@ function send (){
 function appendOutput (text) {
 	var outputTextArea= document.getElementById("output");
 	var oldText= outputTextArea.value;
-	var newText= oldText+text;
+	var newText= oldText + "\n" + text;
 	outputTextArea.value= newText;
+    var inputTextArea= document.getElementById("input");
+    inputTextArea.value= "";
 }
 function refreshText() { 
 	var refreshText= document.getElementById("output");
@@ -57,8 +63,13 @@ button.addEventListener("click", function(e) {
         if (e=='message') {
         	   appendOutput(message.data);
         };
+
+        if (e=='joined') { 
+            refreshList (chatList,message.data);
+
+        };
     };
-	
+
 	socket.onerror = function(error) {
         console.log(error);
     };
