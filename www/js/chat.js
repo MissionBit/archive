@@ -16,6 +16,8 @@ function appendOutput (text) {
 	var oldText= outputTextArea.value;
 	var newText= oldText + "\n" + text;
 	outputTextArea.value= newText;
+    var inputTextArea= document.getElementById("input");
+    inputTextArea.value= "";
 }
 function refreshText() { 
 	var refreshText= document.getElementById("output");
