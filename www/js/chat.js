@@ -36,7 +36,7 @@ var showlogin= function() {
 } 
 
 button.addEventListener("click", function(e) {
-	socket = new WebSocket('ws://162.243.141.18:8080/chat');
+	socket = new WebSocket('ws://localhost:8080/chat');
 
 
 
