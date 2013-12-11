@@ -39,7 +39,7 @@ def echo_socket(ws):
             for key in usersockets.keys():
                 connection = usersockets[key]
                 name = names[socket_key]
-                response = {"event": "joined", "data": data}
+                response = {"event": "joined", "data": names.values()}
                 connection.send(json.dumps(response))
         elif action == "send":
              for key in usersockets.keys():
