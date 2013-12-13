@@ -25,20 +25,17 @@ h1 {
 #output
 {
 	position: absolute;
-	right: 30px;
+	left: 30px;
 	top: 150px;
 	background-image:url('plaid.jpg'); 
-	margin-right: 300px;
+	margin-left: 300px;
 }
 #typingbox
 {
 	position: fixed;
-	right:70px;
 	bottom: 10px;
 	background-image: url('hm.png position=absolute');
-	margin-left: 50px;
-	margin-right: 300px;
-
+	margin-left: 350px;
 }
 #login{
 	margin-left: 2000px;
