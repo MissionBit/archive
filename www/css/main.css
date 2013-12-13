@@ -1,6 +1,8 @@
 body {
 	
-	background-image:url('cartoon.jpg');
+	background-image:url(http://www.cool-backgrounds.org/wallpapers/simple_clouds_background-1920x1080.jpg);
+	background-color: yellow;
+
 }
 h1 {
 	font-size: 40px;
@@ -13,12 +15,13 @@ h1 {
 #header
 {
 	color: black;
+	font-family: "monofur";
+
 }
 #names
 {
 	
-	font-size: 28px;
-}
+	font-size: 28px;}
 #output
 {
 	position: absolute;
@@ -33,7 +36,8 @@ h1 {
 	right:70px;
 	bottom: 10px;
 	background-image: url('hm.png position=absolute');
-	margin-left: 600px;
+	margin-left: 50px;
+	margin-right: 300px;
 
 }
 #login{
@@ -66,3 +70,4 @@ li:hover {
   background: #eee;
   cursor: pointer;
 }
+
