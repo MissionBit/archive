@@ -30,4 +30,13 @@ var refreshList = function(list, members) {
 };
 var removeFromList = function(list, member) {
     console.log("removing:" + member);
+    var users = list.getElementsByTagName("li");
+
+    for (var i=0; i<users.length; i++){
+        var user = users[i];
+        var name = user.getElementsByTagName("h3")[0].innerHTML;
+        console.log(name);
+    }
+
+
 }
