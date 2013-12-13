@@ -29,9 +29,14 @@ def echo_socket(ws):
         if ws.socket is None:
             print "Disconnected: {0}".format(socket_key)
             del usersockets[socket_key]
+            name = names[socket_key]
             del names[socket_key]
+            response = {"event": "Disconnected", "data": name}
+            for key in usersockets.keys():
+                connection = usersockets[key]
+                connection.send(json.dumps(response))
             break    
-        message = json.loads(raw_message)
+        message = json.loads(raw_message) 
         action = message["action"]
         data = message["data"]
         if action == "join":
@@ -40,7 +45,8 @@ def echo_socket(ws):
                 connection = usersockets[key]
                 name = names[socket_key]
                 response = {"event": "joined", "data": names.values()}
-                connection.send(json.dumps(response))
+                if ws.socket is not None:
+                    connection.send(json.dumps(response))
         elif action == "send":
              for key in usersockets.keys():
                 connection = usersockets[key]

@@ -68,6 +68,9 @@ button.addEventListener("click", function(e) {
             refreshList (chatList,message.data);
 
         };
+        if (e=='Disconnected') {
+            removeFromList (chatList,message.data);
+        };
     };
 
 	socket.onerror = function(error) {

@@ -1,8 +1,5 @@
 var clearList = function(list) {
-    for(i=0; i < list.childNodes.length; i++) {
-        var item = chatList.childNodes[i];
-        list.removeChild(item);
-    }
+    list.innerHTML = '';
 };
 
 var populateList = function(list, members) {
@@ -31,3 +28,17 @@ var refreshList = function(list, members) {
     clearList(list);
     populateList(list, members);
 };
+var removeFromList = function(list, member) {
+    console.log("removing:" + member);
+    var users = list.getElementsByTagName("li");
+
+    for (var i=0; i<users.length; i++){
+        var user = users[i];
+        var name = user.getElementsByTagName("h3")[0].innerHTML;
+        if (name == member) {
+            list.removeChild(user);
+        }
+    }
+
+
+}
