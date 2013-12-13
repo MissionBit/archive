@@ -28,3 +28,6 @@ var refreshList = function(list, members) {
     clearList(list);
     populateList(list, members);
 };
+var removeFromList = function(list, member) {
+    console.log("removing:" + member);
+}
