@@ -35,7 +35,7 @@ var removeFromList = function(list, member) {
     for (var i=0; i<users.length; i++){
         var user = users[i];
         var name = user.getElementsByTagName("h3")[0].innerHTML;
-        if (name == message) {
+        if (name == member) {
             list.removeChild(user);
         }
     }
