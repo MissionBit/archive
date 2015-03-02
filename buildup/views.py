@@ -6,6 +6,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 from django import forms
 from django.core.urlresolvers import reverse
+from django.contrib.auth.decorators import login_required
 
 from buildup.models import Fact
 
@@ -30,8 +31,8 @@ def all_facts(request):
 
 class FactForm(forms.Form):
     text = forms.CharField(label="A random fact", max_length=255)
-    author = forms.CharField(label="Your name", max_length=255)
 
+@login_required
 def new_fact(request):
     # someone wants to create a fact
     if request.method == "GET":
@@ -44,7 +45,7 @@ def new_fact(request):
         if form.is_valid():
             # save the new fact
             text = form.cleaned_data['text']
-            author = form.cleaned_data['author']
+            author = request.user
             new_fact = Fact(text=text, author=author, created_date=datetime.now())
             new_fact.save()
 
