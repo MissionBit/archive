@@ -1,4 +1,5 @@
 import os
+import dj_database_url
 ROOT_URLCONF = 'buildup.urls'
 WSGI_APPLICATION = 'buildup.wsgi.application'
 SECRET_KEY = os.environ.get('DJANGO_SECRET', 'sekret')
@@ -13,12 +14,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 TEMPLATE_DIRS = (
     os.path.join(BASE_DIR, "buildup/templates"),
 )
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'buildup.db')
-    }
-}
+DATABASES = { 'default': dj_database_url.config() }
 INSTALLED_APPS = (
     'buildup',
     'django.contrib.auth',
