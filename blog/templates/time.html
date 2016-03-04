@@ -1,0 +1,23 @@
+<html>
+<style>
+
+    p{
+        color: purple;
+    }
+
+</style>
+<head>
+    <title> TIME</title>
+</head>
+<body>
+<h1>WHATS THE CURRENT TIME???</h1>
+    {% for t in 'time' %}
+    <div>
+      <h3>Right now it is:</h3>
+     <p>{{ timeNow }}</p>
+    </div>
+    {% endfor %}
+</body>
+
+
+</html>

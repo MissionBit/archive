@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fav</title>
+</head>
+<body>
+<p> Click<a href="/time">this right here</a> to see my website</p>
+
+
+    {% for r in titles %}
+    <div>
+      <h3>{{ r.title }}</h3>
+     <p> {{ r.review}}
+     - {{r.name}}
+     </p>
+      <p>{{r.created_date}}</p>
+    </div>
+    {% endfor %}
+</body>
+</html>

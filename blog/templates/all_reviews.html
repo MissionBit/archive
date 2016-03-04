@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+  <head>
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+      <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <title>Reviews</title>
+  </head>
+  <body>
+    <h1>OUR REVIEWS</h1>
+    {% for r in revs %}
+    <div>
+      <h3>{{ r.title }}</h3>
+     <p> {{ r.review}}
+     - {{r.name}}
+     </p>
+      <p>{{r.created_date}}</p>
+    </div>
+    {% endfor %}
+  </body>
+</html>

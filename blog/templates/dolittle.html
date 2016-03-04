@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <title>Reviews</title>
+  </head>
+  <body>
+    <h1>OUR REVIEWS</h1>
+    {% for r in revs %}
+    <div>
+      <h3>{{ r.title }}</h3>
+     <p> {{ r.review}}
+     - {{r.name}}
+     </p>
+      <p>{{r.created_date}}</p>
+    </div>
+    {% endfor %}
+  </body>
+</html>
