@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Reviews</title>
+    <title>{{ r.title }}</title>
   </head>
   <body>
-    <h1>OUR REVIEWS</h1>
-    {% for r in revs %}
+    {% for r in titles %}
     <div>
       <h3>{{ r.title }}</h3>
      <p> {{ r.review}}

@@ -13,16 +13,27 @@ def hello(request):
 def hello_name(request, yourname):
     return render(request, "hello_name.html", { "yourname": yourname })
 
+def favs(request):
+    return render(request, "favorite.html", {})
 
-def dolittle(request):
-    return render(request, "dolittle.html", { "revs": Review.objects.all() })
-def all_reviews(request):
-    return render(request, "all_reviews.html", { "revs": Review.objects.all() })
 def time(request):
     return render(request, "time.html", {"timeNow": datetime.now()    })
 
-def favs(request):
-    return render(request, "favorite.html", {"titles": Review.objects.filter(title='pacman')})
+def all_reviews(request):
+    return render(request, "all_reviews.html", { "revs": Review.objects.all() })
+
+def by_title(request):
+    return render(request, "by_title.html", {"titles": Review.objects.filter(title='pacman')})
+
+def random(request):
+    return render(request, "random.html", {"random": Review.objects.order_by('?')[0]})
+
+
+
+
+
+
+
 
 
 class ReviewForm(forms.Form):
@@ -35,7 +46,7 @@ def new_review(request):
    # someone wants to create a new review
    if request.method == "GET":
        form = ReviewForm()
-       return render(request, "reviewNew.html", { "form": form })
+       return render(request, "new_review.html", { "form": form })
    else:
        # someone submitted the form so we need to save the data
        form = ReviewForm(request.POST)
@@ -47,7 +58,7 @@ def new_review(request):
             new = Review(title=title, review=review, name=name, created_date=datetime.now())
             new.save()
 
-            return HttpResponseRedirect(reverse('dolittle'))
+            return HttpResponseRedirect(reverse('all_reviews'))
 
        else:
             return render(request, "new_review.html", { "form": form })
