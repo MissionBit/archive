@@ -13,7 +13,9 @@
     <h1>OUR REVIEWS</h1>
     {% for r in revs %}
     <div>
+        <div class="title">
       <h3>{{ r.title }}</h3>
+            </div>
      <p> {{ r.review}}
      - {{r.name}}
      </p>
