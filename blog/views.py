@@ -3,7 +3,7 @@ from datetime import datetime
 from django import forms
 from django.core.urlresolvers import reverse
 from django.http import HttpResponseRedirect
-from blog.models import Review
+from blog.models import Review, Great_Britian
 
 
 def hello(request):
@@ -19,18 +19,30 @@ def favs(request):
 def time(request):
     return render(request, "time.html", {"timeNow": datetime.now()    })
 
+
+
+
 def all_reviews(request):
     return render(request, "all_reviews.html", { "revs": Review.objects.all() })
 
-def by_title(request):
-    return render(request, "by_title.html", {"titles": Review.objects.filter(title='pacman')})
+
+
+
+
+def by_title(request, game):
+    if Review.objects.filter(title = game).exists():
+
+        return render(request, "by_title.html", {"titles": Review.objects.filter(title="Pacman"), "game":game})
+    else:
+        return render(request, "no_game.html", {})
 
 def random(request):
     return render(request, "random.html", {"random": Review.objects.order_by('?')[0]})
 
 
 
-
+def list(request):
+    return render(request, "list.html", {"objects": Great_Britian.objects.order_by('unit_name')})
 
 
 

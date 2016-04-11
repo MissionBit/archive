@@ -1,0 +1,81 @@
+unit_name,class,description,men,guns,firepower,range,accuracy,reloading skill,ammo,strength,speed,value,defense,recruit_cost,upkeep_cost
+Sakers,Fixed Artillery,"A saker is an old-fashioned style of light cannon, deployed in a fixed position.",24,4,21,400,40,30,,,,,3,660,160
+Demi-Cannons,Fixed Artillery,"A demi-cannon is a heavy artillery piece from the previous century, deployed in a fixed battlefield position.",24,4,38,400,45,30,,,,,3,710,170
+4-inch Mortar Battery,Fixed Artillery,"A mortar is a large calibre, fixed artillery piece that lobs an explosive shell in a high arc at the enemy.",24,4,42,750,15,5,,,,,3,950,230
+Rocket Troop,Fixed Artillery,"War rockets are a terrifying device, capable of carrying different kinds of warhead and of causing utter panic in their targets.",24,4,6,750,15,5,,,,,3,1040,260
+24-lber Foot Artillery,Artillery,Foot artillery batteries are the core of an army on campaign: the weapons that win battles and batter down walls.,24,4,84,500,55,35,,,,,4,610,240
+12-lber Howitzer Foot Artillery,Artillery,"Howitzers send shells plunging into enemy formations and over defences, making cover irrelevant.",24,4,27,350,45,25,,,,,3,630,150
+24-lber Howitzer Foot Artillery,Artillery,"Howitzers send shells plunging into enemy formations and over defences, making cover irrelevant.",24,4,40,350,40,25,,,,,3,650,160
+12-lber Foot Artillery,Artillery,Foot artillery batteries are the core of an army on campaign: the weapons that win battles and batter down walls.,24,4,27,400,45,30,,,,,3,840,210
+24-lber Foot Artillery,Artillery,Foot artillery batteries are the core of an army on campaign: the weapons that win battles and batter down walls.,24,4,42,400,55,30,,,,,3,890,220
+Puckle Guns,Artillery,"The Puckle gun is a tripod-mounted repeating heavy musket or small cannon, capable of rapid fire.",24,4,0,150,40,25,,,,,3,1140,280
+3-lber Horse Artillery,Horse Artillery,"Intended to keep up with rapidly-advancing mounted forces, horse artillery batteries have a touch of â€œcavalry dashâ€ù about them.",24,4,9,400,45,30,,,,,3,850,210
+6-lber Horse Artillery,Horse Artillery,"Intended to keep up with rapidly-advancing mounted forces, horse artillery batteries have a touch of â€œcavalry dashâ€ù about them.",24,4,15,400,50,30,,,,,3,870,210
+Heavy Cavalry,Heavy Cavalry,These cavalrymen see themselves as elite. It is their job to smash into enemy units and destroy them utterly.,60,,,0,0,0,0,16,14,10,9,1020,300
+Life Guards,Heavy Cavalry,"The royal guard cavalrymen are all gentlemen, hand picked to protect the person of the sovereign.",60,,,0,0,0,0,19,17,15,12,1090,320
+Horse Guards,Heavy Cavalry,"Horse Guards are an elite heavy cavalry unit, with a fierce reputation and deadly sabres.",60,,,0,0,0,0,21,19,13,13,1200,300
+East India Company Lancers,Lancer Cavalry,These cavalrymen are armed with a long spear or lance that makes them particularly deadly when charging.,60,,,0,0,0,0,7,25,7,5,920,270
+Colonial Light Cavalry,Light Cavalry,Light cavalry are used to screen an army and act as its eyes and ears; they can also pursue fleeing enemies and keep them from regrouping.,30,,,0,0,0,0,11,8,7,9,430,170
+Mounted Tribal Auxiliary,Missile Cavalry,"These tribesmen are willing to fight for European gold, and a musket apiece.",60,,,70,35,20,20,6,7,5,5,890,260
+Yeomanry,Cavalry,These locally recruited cavalry are a valuable aid in keeping order.,60,,,0,0,0,0,9,11,5,5,900,270
+Regiment of Horse,Cavalry,"These cavalry are shock troops, intended to charge into melee and deliver terrible blows with their straight swords.",60,,,0,0,0,0,11,12,8,7,940,280
+East India Company Cavalry,Cavalry,"Recruited to fight in India, company cavalry are mercenaries fighting for the great trading companies.",60,,,0,0,0,0,11,12,8,7,950,280
+Native Indian Cavalry,Cavalry,Sipahis are superb horsemen and their ornate lances are deadly when brought to bear at the charge.,60,,,0,0,0,0,9,21,13,8,1020,300
+General's Bodyguard,General,These tough warriors and soldiers have only one task: keeping their commander alive and well in the swirling chaos of battle.,32,,,0,0,0,0,9,14,10,10,1290,90
+Colonial Dragoons,Dragoons,"Despite appearances, dragoons are not really cavalry but mounted line infantry, riding into a battle then fighting on foot.",80,,,70,40,25,15,7,10,6,5,950,280
+Dragoons,Dragoons,"Despite appearances, dragoons are not really cavalry but mounted line infantry, riding into a battle then fighting on foot.",80,,,70,40,25,15,7,10,6,5,950,280
+Light Dragoons,Dragoons,"Light dragoons are mounted skirmishers, riding to a fight then engaging the enemy on foot.",80,,,70,50,25,20,7,10,6,5,980,290
+Coldstream Guards,Elite Infantry,The reputation of these elite soldiers and the example they set provides encouragement to comrades nearby.,160,,,70,50,65,15,7,11,18,11,1190,290
+Guards,Elite Infantry,The elite foot guards are charged with protecting the persons of the monarch and the royal family.,160,,,70,50,55,15,9,13,18,11,1200,300
+Republican Guard,Elite Infantry,"The Republican Guard are the elite of the nation, proud to fight for their people and unwavering in the defence of their hard-won liberties.",160,,,70,50,55,15,9,13,18,11,1200,300
+The Black Watch,Elite Infantry,The reputation of these elite soldiers and the example they set provides encouragement to comrades nearby.,160,,,70,50,40,15,9,17,17,11,1220,300
+Grenadiers,Grenadiers,"Grenadiers are large, strong men, armed with muskets and carrying bags of bombs to hurl at the enemyâ€™s ranks.",80,,,70,45,35,15,10,14,16,8,910,220
+Pandours,Irregulars,"These irregular troops are often poorly equipped and ill-disciplined, but they can be a very effective, mobile â€œmobâ€ù.",80,,,90,35,5,20,7,8,2,3,380,90
+Native Musketmen Auxiliary,Irregulars,"These tribesmen are willing to fight for European gold, and a musket apiece.",80,,,90,35,15,15,8,6,3,5,400,100
+Native American Musketeers,Irregulars,"These tribesmen are willing to fight for European gold, and a musket apiece.",180,,,70,30,10,5,6,4,2,5,520,200
+Light Infantry,Light Infantry,Light infantry are skirmishers who harass the enemy while screening the main body of an army.,80,,,90,55,30,20,5,4,6,6,460,110
+Colonial Light Infantry,Light Infantry,Light infantry are skirmishers who harass the enemy while screening the main body of an army.,80,,,90,55,30,20,5,4,6,6,460,110
+Chasseurs Britanniques,Light Infantry,Expatriate infantry are exiles in another nationâ€™s service: men with nothing left to lose but their lives.,80,,,90,50,35,20,5,4,7,4,500,120
+Green Jackets,Light Infantry,"Riflemen are skirmishers and snipers without peer, picking off leaders to sow confusion in enemy ranks.",80,,,125,70,35,20,4,8,12,7,680,170
+Ferguson Riflemen,Light Infantry,"Ferguson Riflemen are scouts and snipers, who harass the enemy by targeting officers and leaders.",80,,,125,70,35,20,4,6,10,7,840,210
+Line Infantry,Line Infantry,"These musket-armed troops use massed volleys to break an enemy, relying on discipline to withstand any counter fire.",160,,,70,45,25,15,8,5,14,9,720,280
+Sepoys,Line Infantry,"Recruited by colonial powers, these indigenous Indian infantry are renowned for their loyalty and resilience.",160,,,70,30,20,15,4,8,10,7,780,190
+African Native Infantry,Line Infantry,"These musket-armed troops use massed volleys to break an enemy, relying on discipline to withstand any counter fire.",160,,,70,30,20,15,4,8,10,5,780,190
+Hessian Line Infantry,Line Infantry,"These musket-armed troops use massed volleys to break an enemy, relying on discipline to withstand any counter fire.",160,,,70,30,20,15,4,8,11,5,800,200
+East India Company Infantry,Line Infantry,"Raised in India, these European mercenaries do not fight â€œfor king and countryâ€ù but for the great East Indies trading companies.",160,,,70,40,25,15,6,9,13,7,920,230
+Colonial Line Infantry,Line Infantry,"These musket-armed troops use massed volleys to break an enemy, relying on discipline to withstand any counter fire.",160,,,70,40,25,15,6,9,13,7,920,230
+Line Infantry,Line Infantry,"These musket-armed troops use massed volleys to break an enemy, relying on discipline to withstand any counter fire.",160,,,70,40,30,15,6,9,15,8,970,240
+Pikemen,Melee Infantry,Pikemen carry long spears of a type that would have been familiar to the soldiers of Alexander the Great.,160,,,0,0,0,0,9,3,13,7,720,180
+Ghoorkas,Melee Infantry,"Recruited by colonial powers, these indigenous Indian infantry are renowned for their loyalty and resilience.",200,,,0,0,0,0,11,10,8,7,920,230
+Colonial Militia,Militia,"These musket-armed troops are recruited to defend their own locality, not carry the war to an enemyâ€™s land.",160,,,70,25,10,15,4,8,9,4,690,170
+Militia,Militia,"These musket-armed troops are recruited to defend their own locality, not carry the war to an enemyâ€™s land.",160,,,70,25,10,15,4,8,9,4,690,170
+Conscripts,Militia,"These men are legally compelled to serve in the army, on pain of imprisonment or death. As a result, they may not be the most enthusiastic of soldiers!",160,,,70,35,15,3,6,9,11,6,830,200
+Dahomey Amazons,Militia,"These merciless female warriors, armed with rifles, are rightly feared by men for their aggression in battle.",160,,,90,40,10,5,7,8,3,6,850,250
+Rangers,Skirmishers,These elite light infantrymen are trained in wilderness warfare and taught to survive in harsh conditions.,80,,,70,60,25,15,8,4,5,8,490,190
+Colonial Militia,Skirmishers,"These musket-armed troops are recruited to defend their own locality, not carry the war to an enemyâ€™s land.",160,,,70,35,15,15,6,4,5,4,510,200
+Rangers,Skirmishers,These elite light infantrymen are trained in wilderness warfare and taught to survive in harsh conditions.,80,,,90,50,30,20,8,10,7,5,510,120
+Rogers' Rangers,Skirmishers,These elite light infantrymen are trained in wilderness warfare and taught to survive in harsh conditions.,80,,,90,65,35,20,9,11,9,9,710,170
+Brig,Brig,"A brig is a lightly armed, small, two-masted sailing ship, much prized for its exceptional handling and sailing qualities.",78,25,73,500,57,5,,1180,21,High,,500,80
+Brig,Brig,"A brig is a lightly armed, small, two-masted sailing ship, much prized for its exceptional handling and sailing qualities.",78,25,76,500,60,7,,1258,21,High,,700,170
+Sloop,Sloop,A sloop of war is usually ketch-rigged with two masts. These small vessels handle well in restricted waters.,62,18,72,500,57,4,,1318,22,High,,390,60
+Sloop,Sloop,A sloop of war is usually ketch-rigged with two masts. These small vessels handle well in restricted waters.,62,18,84,500,60,6,,1396,22,High,,560,140
+"Admiral's Flagship, 5th Rate",Admiral,"Flagship frigates are single-deck warships, combining good handling, firepower and endurance at sea.",130,47,112,500,63,6,,3080,18,Medium,,1570,390
+Fifth Rate,5th Rate,"Frigates are single-deck warships, used for a variety of tasks thanks to a combination of good handling, firepower and endurance at sea.",130,47,112,500,57,6,,2716,18,Medium,,1110,180
+Fifth Rate,5th Rate,"Frigates are single-deck warships, used for a variety of tasks thanks to a combination of good handling, firepower and endurance at sea.",130,47,112,500,60,8,,2856,18,Medium,,1300,320
+Razee,Razee,"A razee is a robust frigate, created by cutting the top deck off a larger ship of the line.",134,47,124,500,60,10,,4654,18,Medium,,2080,520
+Sixth Rate,6th Rate,"A sixth rate is the smallest class of frigate. It is a useful scout for slow battle fleets, and usually has excellent handling characteristics.",92,32,78,500,60,8,,2198,19,Medium,,940,230
+Carronade Frigate,6th Rate,"Carronade frigates are single-deck vessels, with extremely impressive short-range firepower.",76,24,52,300,60,8,,2856,18,Medium,,1170,290
+Steamship,Steam Ship,"A steamship still uses sails, but the ability to ignore the wind is highly desirable in a warship.",114,31,216,500,60,10,,3134,18,High,,1770,440
+Light Galley,Light Galley,"Light galleys have sails and oars, and light cannons mounted on platforms above the rowersâ€™ benches.",16,2,174,500,57,2,,578,19,High,,380,90
+Galley,Medium Galley,"Galleys are propelled by both oars and sails, with cannons on firing platforms above the rowersâ€™ heads.",74,2,174,500,57,3,,1032,18,High,,430,100
+"Admiral's Flagship, 3rd Rate",Admiral,"The third rate is a compromise between firepower and handling. A stable gun platform, it also makes a good flagship.",196,72,231,500,63,8,,5544,16,Low,,2540,630
+"Admiral's Flagship, 1st Rate",Admiral,"The first rate is the largest type of â€œship of the line of battleâ€ù, intended to be the command ships at the centre of any fleet.",264,102,238,500,63,8,,9408,14,Low,,3630,900
+First Rate Ship of the Line,1st Rate,"The first rate is the largest type of â€œship of the line of battleâ€ù, intended to be the centre of any fleet. These are very expensive and powerful vessels.",264,102,238,500,60,10,,8772,14,Low,,3310,820
+Fourth Rate Ship of the Line,4th Rate,"The fourth rate is the smallest vessel styled a â€œship of the lineâ€ù (of battle), carrying as many as 60 guns.",152,56,158,500,60,8,,4152,16,Low,,1850,460
+Heavy First Rate,Over 1st Rate,For some navies big is never quite big enough! This oversized â€œfirst rate ship of the lineâ€ù is more a floating fortress than a mere battleship.,300,118,246,500,61,10,,10042,13,Low,,4040,1010
+HMS Victory,Over 1st Rate,"HMS Victory is a first rate ship of the line, carrying some 100 guns and a crew of more than 800 men.",268,102,252,500,65,8,,10586,14,Low,,4740,1180
+Second Rate Ship of the Line,2nd Rate,"The second rate is a three-deck â€œBattle Ship of the Lineâ€ù carrying up to 98 cannons, a powerful unit in any fleet.",224,84,166,500,60,10,,6796,14,Low,,2720,680
+Third Rate Ship of the Line,3rd Rate,"The third rate is an excellent compromise between firepower and handling qualities. A stable gun platform, it has more guns than many whole armies!",196,72,231,500,60,10,,4818,16,Low,,2200,550
+Indiaman (Trade Ship),Indiaman,"The Indiaman is an armed merchant ship, strongly built for the trade routes between Europe and the East. It is not a warship, but can defend itself in need.",54,12,36,500,36,4,,1938,16,Low,,600,50
+Bomb Ketch,Bomb Ketch,"The â€œbombâ€ù is a floating weapons platform, usually adapted from a small, two-masted ketch. The whole ship is constructed around a single large-calibre mortar.",42,15,66,750,60,4,,1176,16,Low,,1260,310
+Rocket Ship,Rocket Ship,"A rocket ship is a floating arsenal, usually converted from a two-masted ketch-rigged vessel. The whole ship is given over to a rocket battery and the necessary stores.",16,2,66,750,20,6,,578,16,Low,,2135,530

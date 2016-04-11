@@ -7,7 +7,9 @@ urlpatterns = [
     url(r'^time/', 'blog.views.time',name ='time'),
     url(r'^favorites/','blog.views.favs',name='favs'),
     url(r'^reviews/','blog.views.all_reviews',name='all_reviews'),
-    url(r'^review/new/$', 'blog.views.new_review', name='new_review'),
+    url(r'^review/new/', 'blog.views.new_review', name='new_review'),
     url(r'^review/random/', 'blog.views.random', name = 'random'),
-    url(r'^review/title/', 'blog.views.by_title', name ='by_title'),
+    url(r'^review/title/(?P<game>.+)', 'blog.views.by_title', name ='by_title'),
+    url(r'^units/?', 'blog.views.list', name='list'),
+
 ]
