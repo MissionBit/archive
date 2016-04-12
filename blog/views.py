@@ -4,7 +4,6 @@ from django import forms
 from django.core.urlresolvers import reverse
 from django.http import HttpResponseRedirect
 from blog.models import Review, Great_Britian
-import csv
 
 def hello(request):
     return render(request, "hello.html", { })
@@ -43,13 +42,6 @@ def random(request):
 def list(request):
 
 
-
-    with open('/data_files/Great_Britian.csv', 'rb') as csvfile:
-        dataReader = csv.reader(csvfile, delimiter = ',')
-        next(dataReader, None)
-        for row in dataReader:
-            a=Great_Britian(unit_name=row[0], class_name=row[1], description=row[2], men_count=row[3], guns=row[4], firepower=row[5], range=row[6], accuracy=row[7], reloading_skill=row[8], ammo=row[9], strength=row[10], speed=row[11], value=row[12], defense=row[13])
-            a.save()
     return render(request, "list.html", {"objects": Great_Britian.objects.order_by('unit_name')})
 
 
