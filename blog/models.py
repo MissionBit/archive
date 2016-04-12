@@ -34,6 +34,11 @@ class Great_Britian(models.Model):
    defense=models.CharField(max_length=100)
 
 
+class students(models.Model):
+   name=models.CharField(max_length=100)
+   age=models.CharField(max_length=100)
+   hobby=models.CharField(max_length=100)
+   school=models.CharField(max_length=100)
 # class GBcsvModel(CsvDbModel):
    # unit_name=models.CharField()
    # class_name=models.CharField()

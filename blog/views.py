@@ -3,7 +3,7 @@ from datetime import datetime
 from django import forms
 from django.core.urlresolvers import reverse
 from django.http import HttpResponseRedirect
-from blog.models import Review, Great_Britian
+from blog.models import Review, Great_Britian, students
 
 def hello(request):
     return render(request, "hello.html", { })
@@ -42,7 +42,7 @@ def random(request):
 def list(request):
 
 
-    return render(request, "list.html", {"objects": Great_Britian.objects.order_by('unit_name')})
+    return render(request, "list.html", {"objects": students.objects.order_by('name')})
 
 
 
