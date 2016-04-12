@@ -2,7 +2,6 @@ from __future__ import unicode_literals
 from django.db import models
 # from blog.models import CsvDbModel
 
-from data_importer.importers import XLSImporter
 import sys
 from datetime import datetime
 #pip install django-adaptors
