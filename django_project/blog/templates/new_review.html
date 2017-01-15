@@ -1,0 +1,14 @@
+<html>
+  <head>
+
+    <title>Create a Review</title>
+  </head>
+  <body>
+    <h1>New Review</h1>
+    <form action="{% url 'new_review' %}" method="POST">
+      {% csrf_token %}
+      {{ form }}
+      <input type="submit" value="Submit"/>
+    </form>
+  </body>
+</html>

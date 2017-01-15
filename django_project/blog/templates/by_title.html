@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ r.title }}</title>
+  </head>
+  <body>
+  <h1>{{game}}</h1>
+    {% for r in titles %}
+    <div>
+     <p> {{ r.review}}
+     - {{r.name}}
+     </p>
+      <p>{{r.created_date}}</p>
+    </div>
+    <p>**************************************</p>
+
+    {% endfor %}
+  </body>
+</html>
