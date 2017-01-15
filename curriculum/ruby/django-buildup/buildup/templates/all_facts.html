@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Random Facts</title>
+  </head>
+  <body>
+    <h1>All Facts</h1>
+    <a href="{% url 'new_fact' %}">Create a new Fact!</a>
+    {% for fact in facts %}
+    <hr/>
+    <div>
+      <h2>{{ fact.text }}</h2>
+      <h5>- {{ fact.author }} ({{ fact.created_date }})</h5>
+    </div>
+    {% endfor %}
+    <hr/>
+    Thats it
+  </body>
+</html>
