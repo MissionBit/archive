@@ -1,0 +1,70 @@
+body {
+	
+	background-image:url(http://www.cool-backgrounds.org/wallpapers/simple_clouds_background-1920x1080.jpg);
+	background-color: yellow;
+
+}
+h1 {
+	font-size: 40px;
+}
+#logout
+{
+	position: absolute;
+	margin-left: 625px;
+}
+#header
+{
+	color: black;
+	font-family: "monofur";
+
+}
+#names
+{
+	
+	font-size: 28px;}
+#output
+{
+	position: absolute;
+	left: 30px;
+	top: 150px;
+	background-image:url('plaid.jpg'); 
+	margin-left: 300px;
+}
+#typingbox
+{
+	position: fixed;
+	bottom: 10px;
+	background-image: url('hm.png position=absolute');
+	margin-left: 350px;
+}
+#login{
+	margin-left: 2000px;
+}
+ul {
+  list-style-type: none;
+  width: 500px;
+}
+ 
+h3 {
+  font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+}
+ 
+li img {
+  float: left;
+  margin: 0 15px 0 0;
+}
+ 
+li p {
+  font: 200 12px/1.5 Georgia, Times New Roman, serif;
+}
+ 
+li {
+  padding: 20px;
+  overflow: auto;
+}
+ 
+li:hover {
+  background: #eee;
+  cursor: pointer;
+}
+

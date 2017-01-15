@@ -1,0 +1,29 @@
+
+#login {
+  height: 200px;
+  width: 500px ;
+  margin-left: 400px ;
+  margin-right: 200px ;
+  margin-top:350px ;
+  
+}
+
+
+button {
+	font-size:20px;
+	background-color: #1BA14A;
+	color: white;
+	margin-left: 5px;
+
+}
+
+#loginform {
+		height: 100px;
+		margin-left: 66px;
+		margin-right: auto;
+		margin-bottom: 50px;
+		margin-top:0px;
+}
+#loginPUT{
+	font-size: 20px;
+}
